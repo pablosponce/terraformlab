@@ -26,14 +26,6 @@ variable "logica" {
   default = true
 }
 
-
-variable "miset" {
-  type = set(string)
-  #default = ["valor1", "valor2"]
-  default     = ["valor1", "valor1", "valor1"]
-  description = "Set de strings sin valores repetidos"
-}
-
 variable "miobjeto" {
   type = object({
     nombre     = string
