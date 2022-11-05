@@ -1,8 +1,11 @@
-resource "local_file" "hola" {
-  filename = var.fichero
-  content = var.texto
+variable "fichero" {
+  default = "/tmp/hola.txt"
 }
 
-resource "random_string" "mi_texto" {
-  length=var.length
+variable "texto" {
+  default = "Hola mundo! (que poco original que eres)\n"
+}
+
+variable "length" {
+  default = 10
 }
